@@ -1,0 +1,65 @@
+
+
+
+@import url(base/global.css);
+
+body{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2vh;
+    background-color: var(--grisAzul);
+    height: 8vh;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+
+}
+
+
+.botonPrimario{
+    
+    background-color: var(--azulOscuro);
+
+    color:var(--blanco);
+    
+    border: none;
+
+    width: 90%;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+
+}
+
+
+.botonSecundario{
+
+    background-color: var(--grisAzul);
+
+    color:var(--azulOscuro);
+    
+    border: none;
+
+    width: 80%;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    border:2px solid var(--azulOscuro);
+
+    margin-top:3rem;
+
+
+    
+}
