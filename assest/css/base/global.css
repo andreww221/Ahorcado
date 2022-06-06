@@ -1,0 +1,29 @@
+
+
+html {
+    box-sizing: border-box;
+    font-family: var(--fuente);
+    font-size: 62.5%;
+
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+:root {
+
+    --grisAzul: #E5E5E5;
+    --azulOscuro: #0A3871;
+    --blanc: #ffffff;
+    --gris: #495057;
+    --fuente:'Inter', sans-serif;
+
+}
