@@ -49,6 +49,20 @@
 
 
 
+/* PARA EL CANVAS */
+
+canvas{
+    width: 350px;
+}
+
+
+main{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
 
 /* LINEAS PARA LAS LETRAS */
 
@@ -76,4 +90,7 @@
     width: 45%;
    
 }
+
+
+
 
