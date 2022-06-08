@@ -2,6 +2,8 @@
 
 
 
+/*GENERALES */
+
 .contenedor {
     width: 90%;
     margin: 0 auto;
@@ -16,10 +18,18 @@
 
 }
 
+
+
+
+/*HEADER */
+
 header {
     height: 10vh;
 }
 
+
+
+/*MAIN */
 
 .main_txtArea {
     width: 100%;
@@ -32,6 +42,9 @@ header {
 
 
 }
+
+
+/*FOOTER */
 
 .footer_layout {
     height: 50vh;
@@ -55,6 +68,7 @@ header {
 
 
 
+/*UTILIDADES */
 .botonPrimario3 {
 
     background-color: var(--azulOscuro);

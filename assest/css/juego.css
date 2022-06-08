@@ -1,5 +1,6 @@
 
-/* TAMAÑO PARA LOS ELEMENTOS  */
+
+/*UTILIDADES */
 
 .layoutJuego{
     height: 100vh;
@@ -8,10 +9,6 @@
     justify-content: space-around;
 
 }
-
-
-
-/*BOTONES */
 
 .botonPrimario{
     
@@ -56,7 +53,7 @@ a{
 
 
 
-/* PARA EL CANVAS */
+/* SECCION PRINCIPAL */
 
 canvas{
     width: 350px;

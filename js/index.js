@@ -11,67 +11,68 @@ import {
   dibujarSoga,
 } from "./dibujar.js";
 
-/* ELEMENTOS PARA UTILIZAR  */
+/*------------------------------------------------------------------------------ */
+/*                       ELEMENTOS PARA UTILIZAR                                 */
+/*------------------------------------------------------------------------------ */
 
 var frutas = ["FRESA", "PAPAYA", "MANGO", "MANZANA"];
 
+/* ME TRAIGO LA PALABRA PERSONALIZADA ESCRITA POR EL USUARIO*/
 if (localStorage.getItem("palabra")) {
   frutas.push(localStorage.getItem("palabra"));
 }
-
 const frutaAleatoria = palabraAleatoria(frutas);
 const inputLetra = document.querySelector("[data-letra]");
 const botonLetra = document.querySelector("[data-letraBoton]");
 var contenedorLetrasEquivocadas = document.querySelector(".letraEquivocada");
 var letraPresionada = "";
 var numeroDeErrores = 0;
-var arrayLetrasEquivocadas= [];
+var arrayLetrasEquivocadas = [];
 
-console.log(frutaAleatoria);
-
-/* FUNCION QUE INICIA EL JUEGO  */
+/*------------------------------------------------------------------------------ */
+/*                       FUNCION QUE INICIA EL JUEGO                              */
+/*------------------------------------------------------------------------------ */
 crearLineass(frutaAleatoria);
+
+/*------------------------------------------------------------------------------ */
+/*                      EVENTO PARA CONTROLAR LAS LETRAS INGRESADAS              */
+/*------------------------------------------------------------------------------ */
 
 botonLetra.addEventListener("click", () => {
   letraPresionada = inputLetra.value;
 
-  /*EN EL ARRAY POSICIONES CAPTURO EN QUE POSICIONES ESTA LA LETRA CAPTURADA   */
-
+  /*------------------------------------------------------------------------------ */
+  /*               CODIGO QUE BUSCA LAS POSICIONES DE LA LETRA PRESIONADA          */
+  /*------------------------------------------------------------------------------ */
   var posiciones = [];
-
   for (var i = 0; i < frutaAleatoria.length; i++) {
     if (frutaAleatoria[i] == letraPresionada) {
       posiciones.push(i);
     }
   }
 
-  /*EN EL CASO QUE LA LETRA INGRESADA NO SEA LA CONTENIDA EN LA PALABRA*/
-
   if (!frutaAleatoria.includes(letraPresionada)) {
-
+    /*------------------------------------------------------------------------------ */
+    /*               EN CASO QUE LA LETRA PRESIONADA SEA ERRONEA                      */
+    /*------------------------------------------------------------------------------ */
     arrayLetrasEquivocadas.push(letraPresionada);
 
-    var ordenado = arrayLetrasEquivocadas.filter((v,i,a)=>{
-
-      return arrayLetrasEquivocadas.indexOf(v)==i;
-
+    var ordenado = arrayLetrasEquivocadas.filter((v, i, a) => {
+      return arrayLetrasEquivocadas.indexOf(v) == i;
     });
 
-
-    ordenado.forEach(element => {
-
-      contenedorLetrasEquivocadas.textContent=[...ordenado];
-      
+    ordenado.forEach((element) => {
+      contenedorLetrasEquivocadas.textContent = [...ordenado];
     });
-
-
 
     numeroDeErrores = numeroDeErrores + 1;
     errores(numeroDeErrores);
     inputLetra.value = "";
-    console.log("los errores son" + numeroDeErrores);
 
-    /*MENSAJE CUANDO TERMINA EL JUEGO */
+
+    /*------------------------------------------------------------------------------ */
+    /*              CODIGO QUE ESTA EN LA ESCUCHA SI EL USUARIO YA PERDIO              */
+    /*------------------------------------------------------------------------------ */
     if (numeroDeErrores == 7) {
       Swal.fire({
         icon: "error",
@@ -85,7 +86,9 @@ botonLetra.addEventListener("click", () => {
       });
     }
   } else {
-    /* EN EL CASO QUE LA LETRA INGRESADA SEA LA CONTENIDA EN ARRAY LA DIBUJAMOS  */
+    /*------------------------------------------------------------------------------ */
+    /*               EN CASO QUE LA LETRA PRESIONADA SEA CORRECTA                    */
+    /*------------------------------------------------------------------------------ */
 
     const lineas = document.querySelectorAll(".raya");
 
@@ -100,7 +103,9 @@ botonLetra.addEventListener("click", () => {
     inputLetra.value = "";
   }
 
-  /* REVISAR SI GANO */
+  /*------------------------------------------------------------------------------ */
+  /*              CODIGO QUE ESTA EN LA ESCUCHA SI EL USUARIO YA GANO              */
+  /*------------------------------------------------------------------------------ */
 
   const lineas1 = document.querySelectorAll(".raya");
 
@@ -133,3 +138,14 @@ botonLetra.addEventListener("click", () => {
     }
   });
 });
+
+
+
+
+const formulario = document.querySelector(".formulario");
+
+formulario.addEventListener("submit",(e)=>{
+
+e.preventDefault();
+
+})
