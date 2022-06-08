@@ -73,16 +73,6 @@ botonLetra.addEventListener("click", () => {
         confirmButtonText: '<a  href="../pages/juego.html">Jugar de nuevo</a>',
         denyButtonText: `<a href="../index.html">Volver al inicio</a>`,
       
-      }).then((result)=>{
-      
-      if(result.isConfirmed){
-      
-        window.location.href("../index.html");
-      }else{
-        location.href("../index.html");
-      }
-      
-      
       })
     
      
@@ -133,6 +123,11 @@ botonLetra.addEventListener("click", () => {
 
       Swal.fire({
         title: '🎊🥳🥳!!!GANASTE 🥳🥳🎊',
+        showDenyButton: true,
+        confirmButtonColor: '#178207',
+        denyButtonColor: '#FF0317',
+        confirmButtonText: '<a  href="../pages/juego.html">Jugar de nuevo</a>',
+        denyButtonText: `<a href="../index.html">Volver al inicio</a>`,
         width: 600,
         padding: '3em',
         color: '#111111',
