@@ -18,6 +18,7 @@ var numeroDeErrores = 0;
 
 
 
+
 console.log(frutaAleatoria);
 
 
@@ -58,6 +59,36 @@ botonLetra.addEventListener("click", () => {
     inputLetra.value = "";
     console.log("los errores son"+numeroDeErrores);
 
+
+    /*MENSAJE CUANDO TERMINA EL JUEGO */
+    if(numeroDeErrores==7){
+
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Perdiste :(',
+        showDenyButton: true,
+        confirmButtonColor: '#178207',
+        denyButtonColor: '#FF0317',
+        confirmButtonText: '<a  href="../pages/juego.html">Jugar de nuevo</a>',
+        denyButtonText: `<a href="../index.html">Volver al inicio</a>`,
+      
+      }).then((result)=>{
+      
+      if(result.isConfirmed){
+      
+        window.location.href("../index.html");
+      }else{
+        location.href("../index.html");
+      }
+      
+      
+      })
+    
+     
+    }
+   
+
   }else{
 
   /* EN EL CASO QUE LA LETRA INGRESADA SEA LA CONTENIDA EN ARRAY LA DIBUJAMOS  */  
@@ -84,9 +115,44 @@ botonLetra.addEventListener("click", () => {
     
   }
 
+ 
+  /* REVISAR SI GANO */
 
+  const lineas1 = document.querySelectorAll(".raya");
 
+  var palabraEnProceso = "";
 
+  
+  lineas1.forEach((e,i,a)=>{
+
+     palabraEnProceso=palabraEnProceso+e.value;
+
+     console.log("proc : "+palabraEnProceso);
+
+     if(palabraEnProceso==frutaAleatoria){
+
+      Swal.fire({
+        title: '🎊🥳🥳!!!GANASTE 🥳🥳🎊',
+        width: 600,
+        padding: '3em',
+        color: '#111111',
+        background: '#fff url(/images/trees.png)',
+        backdrop: `
+          rgba(0,0,123,0.4)
+          url("https://sweetalert2.github.io/images/nyan-cat.gif")
+          left top
+          no-repeat
+        `
+      })
+
+     }
+
+    
+
+  });
+
+  
+  
 
 
  
@@ -95,3 +161,8 @@ botonLetra.addEventListener("click", () => {
 
 
 });
+
+
+
+
+
