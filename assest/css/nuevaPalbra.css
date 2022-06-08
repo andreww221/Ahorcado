@@ -77,6 +77,8 @@ header {
 
 
     text-align: center;
+
+    cursor: pointer;
 }
 
 
@@ -94,7 +96,7 @@ header {
     border: none;
 
     width: 100%;
-
+    cursor: pointer;
     border-radius: 15px;
 
     padding: 20px;

@@ -28,10 +28,14 @@
       />
     </header>
 
+
+    <form class="formulario" action="">
     <main>
 
-        <textarea placeholder="Ingrese una palabra" class="main_txtArea" name="" id="" ></textarea>
+       
+    <input pattern="[A-Z]+" maxlength="8"  title="LA PALABRA DEBE ESTAR EN MAYUSCULA Y NO CONTENES ESPACIOS" type="text" placeholder="Ingrese una palabra" class="main_txtArea" >
 
+    </input>
 
     </main>
 
@@ -43,15 +47,20 @@
             <p>Máx. de 8 letras</p>
         </div>
 
-        <button class="botonPrimario3">Guardar y confirmar</button>
-        <button class="botonSecundario3">Cancelar</button>
+        <a href="../pages/juego.html"  class="botonPrimario3 footer_botonGuardar">Guardar y confirmar</a>
+        <a href="../index.html"  class="botonSecundario3">Cancelar</a>
 
         
     </footer>
 
+  </form>
+
 
   </body>
 
+
+
+  <script src="../js/agregarPalabra.js"></script>
 
 
   

@@ -8,7 +8,14 @@ import { dibujarCabeza ,dibujarCuerpo ,dibujarManos,dibujarPies, dibujarHorca,di
 
 /* ELEMENTOS PARA UTILIZAR  */
 
-var frutas = ["fresa", "papaya", "mango", "manzana"];
+var frutas = ["FRESA", "PAPAYA", "MANGO", "MANZANA"];
+
+if(localStorage.getItem("palabra")){
+
+  frutas.push(localStorage.getItem("palabra"))
+
+}
+
 const frutaAleatoria = palabraAleatoria(frutas);
 const inputLetra = document.querySelector("[data-letra]");
 const botonLetra = document.querySelector("[data-letraBoton]");
