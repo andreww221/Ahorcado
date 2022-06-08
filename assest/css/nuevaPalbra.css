@@ -1,0 +1,110 @@
+@import url(base/global.css);
+
+
+
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2vh;
+    background-color: var(--grisAzul);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+
+
+}
+
+header {
+    height: 10vh;
+}
+
+
+.main_txtArea {
+    width: 100%;
+    background-color: var(--grisAzul);
+    border: none;
+    font-size: 3.2rem;
+    height: 40vh;
+    color:var(--azulOscuro);
+    padding-top: 5rem;
+
+
+}
+
+.footer_layout {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.footer_informacion {
+    gap: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+
+}
+
+
+
+
+
+
+.botonPrimario3 {
+
+    background-color: var(--azulOscuro);
+
+    color: var(--blanco);
+
+    text-decoration: none;
+
+    border: none;
+
+    width: 100%;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    margin-top: 3rem;
+
+    border: 2px solid var(--azulOscuro);
+
+
+    text-align: center;
+}
+
+
+
+
+.botonSecundario3 {
+
+    background-color: var(--grisAzul);
+
+    color: var(--azulOscuro);
+
+
+    text-decoration: none;
+
+    border: none;
+
+    width: 100%;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    border: 2px solid var(--azulOscuro);
+
+    margin-top: 1rem;
+
+    text-align: center;
+
+
+
+}
