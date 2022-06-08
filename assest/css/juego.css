@@ -99,10 +99,21 @@ main{
 .footer_informacion {
     gap: 1rem;
     display: flex;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin-top: 2rem;
+
+}
+
+.footer_informacion1 {
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+    display: none;
 
 }
 
@@ -121,6 +132,7 @@ main{
    
     
     }
+   
 
 
 
@@ -135,15 +147,20 @@ main{
           width: 50%;
         
         }
-        
 
-        
         .footer_informacion{
             display:none ;
         }
 
         .formulario{
             display:none ;
+        }
+
+        .footer_informacion1 {
+       
+            display: flex;
+       
+        
         }
         
         }

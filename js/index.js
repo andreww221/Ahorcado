@@ -82,14 +82,19 @@ document.addEventListener("keydown",(e)=>{
     /*------------------------------------------------------------------------------ */
     if (numeroDeErrores == 7) {
       Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "Perdiste :(",
-        showDenyButton: true,
-        confirmButtonColor: "#178207",
-        denyButtonColor: "#FF0317",
-        confirmButtonText: '<a  href="../pages/juego.html">Jugar de nuevo</a>',
-        denyButtonText: `<a href="../index.html">Volver al inicio</a>`,
+        title: "!!!PERDISTE 😭😭",
+        confirmButtonColor: "#0A3871",
+        confirmButtonText: 'OK',
+        width: 600,
+        padding: "3em",
+        color: "#111111",
+        background: "#fff url(/images/trees.png)",
+        backdrop: `
+          rgba(0,0,123,0.4)
+          url("https://sweetalert2.github.io/images/nyan-cat.gif")
+          left top
+          no-repeat
+        `,
       });
     }
   } else {
@@ -125,12 +130,9 @@ document.addEventListener("keydown",(e)=>{
 
     if (palabraEnProceso == frutaAleatoria) {
       Swal.fire({
-        title: "🎊🥳🥳!!!GANASTE 🥳🥳🎊",
-        showDenyButton: true,
-        confirmButtonColor: "#178207",
-        denyButtonColor: "#FF0317",
-        confirmButtonText: '<a  href="../pages/juego.html">Jugar de nuevo</a>',
-        denyButtonText: `<a href="../index.html">Volver al inicio</a>`,
+        title: "!!!GANASTE 🥳🥳",
+        confirmButtonColor: "#0A3871",
+        confirmButtonText: 'OK',
         width: 600,
         padding: "3em",
         color: "#111111",
@@ -188,14 +190,19 @@ botonLetra.addEventListener("click", () => {
     /*------------------------------------------------------------------------------ */
     if (numeroDeErrores == 7) {
       Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "Perdiste :(",
-        showDenyButton: true,
-        confirmButtonColor: "#178207",
-        denyButtonColor: "#FF0317",
-        confirmButtonText: '<a  href="../pages/juego.html">Jugar de nuevo</a>',
-        denyButtonText: `<a href="../index.html">Volver al inicio</a>`,
+        title: "!!!PERDISTE 😭😭",
+        confirmButtonColor: "#0A3871",
+        confirmButtonText: 'OK',
+        width: 600,
+        padding: "3em",
+        color: "#111111",
+        background: "#fff url(/images/trees.png)",
+        backdrop: `
+          rgba(0,0,123,0.4)
+          url("https://sweetalert2.github.io/images/nyan-cat.gif")
+          left top
+          no-repeat
+        `,
       });
     }
   } else {
@@ -231,12 +238,9 @@ botonLetra.addEventListener("click", () => {
 
     if (palabraEnProceso == frutaAleatoria) {
       Swal.fire({
-        title: "🎊🥳🥳!!!GANASTE 🥳🥳🎊",
-        showDenyButton: true,
-        confirmButtonColor: "#178207",
-        denyButtonColor: "#FF0317",
-        confirmButtonText: '<a  href="../pages/juego.html">Jugar de nuevo</a>',
-        denyButtonText: `<a href="../index.html">Volver al inicio</a>`,
+        title: "!!!GANASTE 🥳🥳",
+        confirmButtonColor: "#0A3871",
+        confirmButtonText: 'OK',
         width: 600,
         padding: "3em",
         color: "#111111",
