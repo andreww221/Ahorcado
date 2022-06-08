@@ -19,7 +19,7 @@ var frutas = ["FRESA", "PAPAYA", "MANGO", "MANZANA"];
 
 /* ME TRAIGO LA PALABRA PERSONALIZADA ESCRITA POR EL USUARIO*/
 if (localStorage.getItem("palabra")) {
-  frutas.push(localStorage.getItem("palabra"));
+  frutas.push(localStorage.getItem("palabra").toUpperCase());
 }
 const frutaAleatoria = palabraAleatoria(frutas);
 const inputLetra = document.querySelector("[data-letra]");
