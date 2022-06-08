@@ -85,3 +85,17 @@
 }
 
 }
+
+
+
+@media (min-width: 1025px) {
+   
+   
+    .contenedor{
+        width: 40%;
+        margin: 0 auto;
+    }
+
+
+
+}

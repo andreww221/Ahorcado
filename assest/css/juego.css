@@ -125,3 +125,25 @@ main{
 
 
 }
+
+
+    /* RESPONSIVE PARA COMPUTADOR */
+
+    @media (min-width: 1025px) {
+   
+        .layoutJuego{
+          width: 50%;
+        
+        }
+        
+
+        
+        .footer_informacion{
+            display:none ;
+        }
+
+        .formulario{
+            display:none ;
+        }
+        
+        }

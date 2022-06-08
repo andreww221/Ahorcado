@@ -150,6 +150,20 @@ header {
     
     }
 
+    /* RESPONSIVE PARA COMPUTADOR */
+
+
+    @media (min-width: 1025px) {
+   
+        .contenedor {
+            width: 50%;
+          
+        
+        }
+        
+        
+        }
+    
 
 
 
