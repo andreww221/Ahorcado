@@ -72,3 +72,16 @@
 
     
 }
+
+
+
+/* RESPONSIVE PARA TABLET  */
+
+@media (min-width: 765px) {
+   
+.contenedor{
+    width: 60%;
+    margin: 0 auto;
+}
+
+}

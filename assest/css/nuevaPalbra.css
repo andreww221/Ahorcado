@@ -7,7 +7,6 @@
 .contenedor {
     width: 90%;
     margin: 0 auto;
-    margin-top: 2vh;
     background-color: var(--grisAzul);
     min-height: 100vh;
     display: flex;
@@ -24,6 +23,7 @@
 /*HEADER */
 
 header {
+    margin-top: 2rem;
     height: 10vh;
 }
 
@@ -36,8 +36,9 @@ header {
     background-color: var(--grisAzul);
     border: none;
     font-size: 3.2rem;
-    height: 40vh;
+    height: 30vh;
     color:var(--azulOscuro);
+   
     padding-top: 5rem;
 
 
@@ -50,7 +51,8 @@ header {
     height: 50vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-end;
+
 }
 
 
@@ -63,6 +65,12 @@ header {
 
 }
 
+
+.footer_botones{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
 
 
 
@@ -104,23 +112,45 @@ header {
 
     color: var(--azulOscuro);
 
-
     text-decoration: none;
 
     border: none;
 
     width: 100%;
-    cursor: pointer;
+
     border-radius: 15px;
 
     padding: 20px;
 
+    margin-top: 3rem;
+
     border: 2px solid var(--azulOscuro);
 
-    margin-top: 1rem;
 
     text-align: center;
+
+    cursor: pointer;
 
 
 
 }
+
+
+
+/* RESPONSIVE PARA TABLET  */
+
+@media (min-width: 765px) {
+   
+    .footer_botones{
+
+        flex-direction: row;
+        margin-bottom: 10rem;
+   
+    }
+    
+    }
+
+
+
+
+

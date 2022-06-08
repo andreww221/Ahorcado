@@ -106,3 +106,22 @@ main{
 
 }
 
+
+
+/* RESPONSIVE PARA TABLET  */
+
+@media (min-width: 765px) {
+   
+   
+    .footer_informacion {
+       
+        margin-top: 20rem;
+        justify-content: center;
+        align-items: center;
+   
+    
+    }
+
+
+
+}
